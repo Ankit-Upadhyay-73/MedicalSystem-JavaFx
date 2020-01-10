@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.9.0.final using JasperReports Library version 6.9.0-cb8f9004be492ccc537180b49c026951f4220bf3  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="Blank_A4_1" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="4f6931a7-9752-4e34-a7c0-d86e2141e710">
+	<property name="com.jaspersoft.studio.data.sql.tables" value=""/>
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="testDB"/>
+	<queryString language="SQL">
+		<![CDATA[select * from sold]]>
+	</queryString>
+	<field name="CompanyName" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="CompanyName"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="sold"/>
+	</field>
+	<field name="ProductName" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="ProductName"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="sold"/>
+	</field>
+	<field name="BatchNo" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="BatchNo"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="sold"/>
+	</field>
+	<field name="quantity" class="java.lang.Integer">
+		<property name="com.jaspersoft.studio.field.label" value="quantity"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="sold"/>
+	</field>
+	<field name="Price" class="java.lang.Integer">
+		<property name="com.jaspersoft.studio.field.label" value="Price"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="sold"/>
+	</field>
+	<group name="CompanyName">
+		<groupExpression><![CDATA[$F{CompanyName}]]></groupExpression>
+	</group>
+	<group name="ProductName">
+		<groupExpression><![CDATA[$F{ProductName}]]></groupExpression>
+	</group>
+	<group name="BatchNo">
+		<groupExpression><![CDATA[$F{BatchNo}]]></groupExpression>
+	</group>
+	<group name="quantity">
+		<groupExpression><![CDATA[$F{quantity}]]></groupExpression>
+	</group>
+	<group name="Price">
+		<groupExpression><![CDATA[$F{Price}]]></groupExpression>
+	</group>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="79" splitType="Stretch">
+			<staticText>
+				<reportElement x="130" y="10" width="340" height="30" uuid="f81ff32d-2738-42e6-86ad-237ae66f432b"/>
+				<textElement>
+					<font fontName="Bradley Hand ITC" size="22" isBold="true"/>
+				</textElement>
+				<text><![CDATA[New Hahnemann Homoeopathic]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="70" y="40" width="280" height="30" uuid="223258b2-013f-411f-8d36-4f3d65a1d606"/>
+				<textElement>
+					<font fontName="Lucida Calligraphy" size="14"/>
+				</textElement>
+				<text><![CDATA[Product sale on the Day]]></text>
+			</staticText>
+			<textField pattern="MMMMM dd, yyyy">
+				<reportElement x="380" y="43" width="151" height="25" uuid="47629134-bd07-4b87-8a70-2cb04462fdb7"/>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+		</band>
+	</title>
+	<columnHeader>
+		<band height="33" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="0" width="111" height="30" uuid="9f9de8fc-b2c3-4667-8d2f-fe93f911c394">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="4c3b3f65-6a80-45a4-82db-ae53ee9cca68"/>
+				</reportElement>
+				<textElement>
+					<font fontName="Segoe Script" size="12"/>
+				</textElement>
+				<text><![CDATA[CompanyName]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="111" y="0" width="111" height="30" uuid="a55e9788-8534-4fb0-a342-5ad4fedfe5d7">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="ccc03e1d-1592-4582-b196-27a900b788aa"/>
+				</reportElement>
+				<textElement>
+					<font fontName="Segoe Script" size="12"/>
+				</textElement>
+				<text><![CDATA[ProductName]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="222" y="0" width="111" height="30" uuid="9883b485-648c-4a24-bb22-9a1e14282033">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="2b6fc154-f837-43fb-925c-bbce35acf7dc"/>
+				</reportElement>
+				<textElement>
+					<font fontName="Segoe Script" size="12"/>
+				</textElement>
+				<text><![CDATA[BatchNo]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="333" y="0" width="111" height="30" uuid="e4dbfc9c-a0e5-4cea-a763-1cc08e582b81">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="893eb7be-b568-4a69-b9e4-9d21414d5bb5"/>
+				</reportElement>
+				<textElement>
+					<font fontName="Segoe Script" size="12"/>
+				</textElement>
+				<text><![CDATA[quantity]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="444" y="0" width="111" height="30" uuid="1a8fe864-8709-4f87-a6e8-26eb89245880">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="6442809d-b3de-424c-8c42-905e7485f47b"/>
+				</reportElement>
+				<textElement>
+					<font fontName="Segoe Script" size="12"/>
+				</textElement>
+				<text><![CDATA[Price]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="72" splitType="Stretch">
+			<textField>
+				<reportElement x="0" y="0" width="111" height="30" uuid="a184d559-a43f-4523-8109-8f7fcc50bb34">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="4c3b3f65-6a80-45a4-82db-ae53ee9cca68"/>
+				</reportElement>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{CompanyName}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="111" y="0" width="111" height="30" uuid="67386af4-2c5b-4a5f-a0b1-007e8c3f0c5a">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="ccc03e1d-1592-4582-b196-27a900b788aa"/>
+				</reportElement>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{ProductName}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="222" y="0" width="111" height="30" uuid="b0ea952c-3b58-454d-b7b3-a23905d898a3">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="2b6fc154-f837-43fb-925c-bbce35acf7dc"/>
+				</reportElement>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{BatchNo}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="333" y="0" width="111" height="30" uuid="29191670-0411-4db2-80db-8a9df86cdff3">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="893eb7be-b568-4a69-b9e4-9d21414d5bb5"/>
+				</reportElement>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{quantity}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="444" y="0" width="111" height="30" uuid="8dba16ae-6d28-4802-90c4-cc8d32a88022">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="6442809d-b3de-424c-8c42-905e7485f47b"/>
+				</reportElement>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{Price}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+</jasperReport>

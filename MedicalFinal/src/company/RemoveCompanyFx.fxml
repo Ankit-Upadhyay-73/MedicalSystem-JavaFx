@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="186.0" prefWidth="420.0" stylesheets="@../MainWindow/MainCss.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="company.RemoveCompanyFXController">
+   <children>
+      <VBox layoutX="83.0" layoutY="30.0" prefHeight="149.0" prefWidth="273.0">
+         <children>
+            <JFXTextField fx:id="remove_companyName" alignment="CENTER" labelFloat="true" promptText="Company name" />
+            <Region prefHeight="30.0" prefWidth="273.0" />
+            <JFXTextField fx:id="remove_companyBranchArea" alignment="CENTER" labelFloat="true" promptText="Company Branch Area" />
+            <Region prefHeight="14.0" prefWidth="273.0" />
+            <JFXButton fx:id="onRemoveComp" onAction="#onRemoveComp" prefHeight="45.0" prefWidth="214.0" text="Remove" textFill="#2c0a75">
+               <font>
+                  <Font name="Bell MT" size="14.0" />
+               </font>
+               <VBox.margin>
+                  <Insets bottom="20.0" left="30.0" right="20.0" top="20.0" />
+               </VBox.margin>
+            </JFXButton>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

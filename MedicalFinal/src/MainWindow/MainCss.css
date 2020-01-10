@@ -1,0 +1,129 @@
+.menu-bar
+{
+    -fx-base:#10000C;
+    -fx-background-color:#10000C;
+}
+.context-menu
+{
+    -fx-background-color:#10000C;
+}
+.menu.label
+{
+     -fx-text-fill:#efa747;
+}
+/*.glyph-icon
+{
+    -fx-fill:#efa747;
+}
+*/
+.OwnButton
+{
+    -fx-border-radius: 50px;
+    -fx-background-radius: 50px;
+    -fx-border-color: #efa747;
+}
+
+.table-view
+{
+    -fx-base : #10000C;
+    -fx-background-color: #515b51;
+}
+.table-cell
+{
+    -fx-background-color: #515b51;
+    -fx-text-fill: #efa747;
+    -fx-font-size:14px;
+    -fx-font-family: "Comic Sans MS";
+}
+.root{
+    -fx-background-color:   #515b51;
+}
+.button
+{
+    -fx-font-family: "Centaur";
+    -fx-background-color:  #10000C;
+    -fx-font-size: "20px";
+    -fx-text-fill:#efa747;
+}
+.text-area.content
+{
+    -fx-text-fill:#efa747;
+}
+.text-area
+{
+    -jfx-text-fill:#efa747;
+}
+
+.column-header
+{
+    -fx-background-color: #10000C;
+    -fx-font-family: "Bell MT";
+    -fx-font-size: 16px;
+    -fx-text-fill: #10000C;
+}
+
+.text-field
+{
+    -fx-font-family: "Aparajita";
+    -fx-prompt-text-fill:#efa747;
+    -fx-text-fill:#efa747;
+    -jfx-focus-color:#efa747;
+    -fx-alignment:"Center";
+    -fx-font-size:18px;
+    -jfx-unfocus-color: #10000C;
+}
+
+.jfx-combo-box{
+    -jfx-focus-color: #efa747;
+    -jfx-prompt-text-fill : #efa747;
+    -fx-text-fill: #efa747;
+    -jfx-unfocus-color: #efa747;
+}
+.alertLabel
+{
+    -fx-font-size:14px;
+}
+.btn_hanger
+{
+    -fx-font-family:"System";
+    -fx-font-size:14px;
+    -fx-font-weight: bold;
+    -fx-background-color:#10000C;
+    -fx-text-fill: #efa747;
+}
+.glyph-icon{
+    -fx-fill:#efa747 ;
+}
+/* Hamburger Style */
+.jfx-hamburger-icon
+{
+  -fx-spacing:5;
+}
+
+.jfx-hamburger-icon StackPane
+{
+ 	-fx-background-color: #efa747;
+	-fx-background-radius:5px;
+}
+.label
+{
+    -fx-text-fill:#efa747;
+    -fx-font-size:"20px";
+    -fx-font-family: "Andalus";
+}
+.anchor
+{
+      -fx-background-color:   #515b51;
+}
+
+.tab{
+    -fx-pref-width: 170px;
+    -fx-pref-height: 60px;
+    -fx-background-color:#10000C;
+    -fx-font-family: "Consolas";
+}
+
+.tab-header-background
+{
+    -fx-background-color:#10000C;
+}

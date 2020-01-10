@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXDrawer?>
+<?import com.jfoenix.controls.JFXHamburger?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="732.0" prefWidth="1388.0" style="-fx-background-color: #515b51;" stylesheets="@MainCss.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="MainWindow.MainController">
+   <children>
+      <MenuBar prefHeight="31.0" prefWidth="1404.0" stylesheets="@MainCss.css">
+        <menus>
+          <Menu mnemonicParsing="false" text="View">
+            <items>
+              <MenuItem fx:id="menu_ViewCustomer" mnemonicParsing="false" onAction="#onViewCustomer" text="View Customer" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Update">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Update Customer" />
+                  <MenuItem mnemonicParsing="false" text="Update Company" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Remove ">
+            <items>
+                  <MenuItem mnemonicParsing="false" onAction="#onRemoveDrug" text="Remove Drug" />
+                  <MenuItem fx:id="menu_RemoveCustomer" mnemonicParsing="false" onAction="#onRemoveCustomer" text="Remove Customer" />
+                  <MenuItem fx:id="menu_RemoveCompany" mnemonicParsing="false" onAction="#onRemoveCompany" text="Remove Company" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+      <StackPane layoutX="1181.0" layoutY="51.0" prefHeight="63.0" prefWidth="171.0" style="-fx-background-color: #10000C;">
+         <children>
+            <JFXButton buttonType="RAISED" onAction="#onGenerateReport" prefHeight="50.0" prefWidth="165.0" style="-fx-background-color: #8c7547;" text="Report's" textFill="#efa747">
+               <font>
+                  <Font name="Bell MT Bold" size="18.0" />
+               </font>
+               <graphic>
+                  <FontAwesomeIconView glyphName="ALIGN_JUSTIFY" />
+               </graphic>
+            </JFXButton>
+         </children>
+      </StackPane>
+      <JFXTextField fx:id="searchdrugtf" alignment="CENTER" focusColor="#efa747" labelFloat="true" layoutX="301.0" layoutY="124.0" prefHeight="25.0" prefWidth="447.0" promptText="Drug Name" unFocusColor="#efa747">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </JFXTextField>
+      <JFXButton fx:id="search_btn" layoutX="839.0" layoutY="132.0" onAction="#onSearch" prefHeight="39.0" prefWidth="149.0" styleClass="OwnButton" text="   ">
+         <graphic>
+            <FontAwesomeIconView glyphName="SEARCH" size="18.0" />
+         </graphic>
+      </JFXButton>
+      <TableView fx:id="searchtableview" layoutX="236.0" layoutY="200.0" prefHeight="431.0" prefWidth="1133.0">
+        <columns>
+          <TableColumn fx:id="productnameclm" prefWidth="173.0" text="Product Name" />
+          <TableColumn fx:id="companynameclm" prefWidth="171.0" text="Company name" />
+            <TableColumn fx:id="priceclm" prefWidth="116.0" text="Price" />
+            <TableColumn fx:id="manufacturedateclm" prefWidth="171.0" text="Manufacture Date" />
+            <TableColumn fx:id="expirydateclm" prefWidth="175.0" text="Expiry Date" />
+            <TableColumn fx:id="informclm" prefWidth="140.0" text="InForm" />
+            <TableColumn fx:id="availabilityclm" prefWidth="161.0" text="Availability" />
+        </columns>
+      </TableView>
+      <JFXHamburger fx:id="hamburger" layoutX="58.0" layoutY="134.0" onMouseClicked="#clickHamburger" prefHeight="31.0" prefWidth="72.0" styleClass="jfx-hamburger-icon" stylesheets="@MainCss.css" AnchorPane.bottomAnchor="567.0" AnchorPane.leftAnchor="58.0" AnchorPane.rightAnchor="1258.0" AnchorPane.topAnchor="134.0" />
+      <JFXDrawer fx:id="drawer" defaultDrawerSize="150.0" layoutY="200.0" prefHeight="526.0" prefWidth="156.0" AnchorPane.bottomAnchor="6.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="1232.0" AnchorPane.topAnchor="200.0" />
+      <JFXButton layoutX="24.0" layoutY="59.0" onAction="#onSaleClick" prefHeight="48.0" prefWidth="169.0" styleClass="btn_hanger" text="Sale " textFill="#efa747">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+         <graphic>
+            <FontAwesomeIconView glyphName="" />
+         </graphic>
+      </JFXButton>
+   </children>
+</AnchorPane>

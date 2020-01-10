@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="353.0" prefWidth="535.0" stylesheets="@../MainWindow/MainCss.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="forget.ForgetFxController">
+   <children>
+      <JFXTextField fx:id="username_recovery" alignment="CENTER" labelFloat="true" layoutX="147.0" layoutY="100.0" prefHeight="25.0" prefWidth="259.0" promptText="User Name">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="recoverycriteria" labelFloat="true" layoutX="147.0" layoutY="162.0" prefHeight="25.0" prefWidth="175.0" />
+      <JFXComboBox fx:id="recovery_combobox" labelFloat="true" layoutX="332.0" layoutY="162.0" onAction="#setTitle" prefHeight="25.0" prefWidth="100.0" promptText="Recovery" />
+      <JFXPasswordField fx:id="newpassword_recovery" alignment="CENTER" labelFloat="true" layoutX="147.0" layoutY="219.0" prefHeight="25.0" prefWidth="259.0" promptText="New Password">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </JFXPasswordField>
+      <JFXButton fx:id="resetpasswordbtn" layoutX="203.0" layoutY="283.0" onAction="#setOnReset" prefHeight="40.0" prefWidth="147.0" style="-fx-background-color: #11111111;" text="Reset Password" textFill="#2720ab">
+         <font>
+            <Font name="Comic Sans MS" size="14.0" />
+         </font>
+      </JFXButton>
+      <Label layoutX="34.0" layoutY="25.0" prefHeight="40.0" prefWidth="216.0" text="Password Recovery Here" />
+   </children>
+</AnchorPane>

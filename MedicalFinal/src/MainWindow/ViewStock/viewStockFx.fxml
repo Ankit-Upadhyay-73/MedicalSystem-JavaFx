@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+
+<TableView fx:id="tableview" prefHeight="551.0" prefWidth="1099.0" stylesheets="@../MainCss.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="MainWindow.ViewStock.ViewStockController">
+   <columns>
+      <TableColumn fx:id="productnameclm_StockView" prefWidth="93.0" text="Product Name" />
+      <TableColumn fx:id="companynameclm_StockView" prefWidth="170.0" text="Company name" />
+      <TableColumn fx:id="priceclm_StockView" minWidth="4.0" prefWidth="175.0" text="Price" />
+      <TableColumn fx:id="manufacturedateclm_StockView" prefWidth="153.0" text="Manufacture Date" />
+      <TableColumn fx:id="expirydateclm_StockView" prefWidth="179.0" text="Expiry Date" />
+      <TableColumn fx:id="informclm_StockView" prefWidth="166.0" text="InForm" />
+      <TableColumn fx:id="availabilityclm_StockView" prefWidth="171.0" text="Availability" />
+   </columns>
+</TableView>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextArea?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="358.0" prefWidth="487.0" stylesheets="@../MainWindow/MainCss.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Customer.AddCustomerFXController">
+   <children>
+      <VBox layoutX="102.0" layoutY="32.0" prefHeight="312.0" prefWidth="283.0" AnchorPane.rightAnchor="102.0">
+         <children>
+            <Region prefHeight="24.0" prefWidth="283.0" />
+            <JFXTextField fx:id="customernametf" labelFloat="true" prefHeight="30.0" prefWidth="273.0" promptText="Customer Name">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </JFXTextField>
+            <Region prefHeight="17.0" prefWidth="283.0" />
+            <JFXTextField fx:id="customeridtf" labelFloat="true" prefHeight="31.0" prefWidth="283.0" promptText="Customer Id" />
+            <Region prefHeight="19.0" prefWidth="283.0" />
+            <JFXTextField fx:id="customercontacttf" labelFloat="true" prefHeight="31.0" prefWidth="283.0" promptText="Contact Number" />
+            <Region prefHeight="25.0" prefWidth="283.0" />
+            <JFXTextArea fx:id="customeraddresstf" labelFloat="true" prefHeight="43.0" prefWidth="283.0" promptText="Customer Address" unFocusColor="#efa747" />
+            <Region prefHeight="17.0" prefWidth="283.0" />
+            <JFXButton fx:id="addcustomer_btn" onAction="#onAddCustomer_btn" prefHeight="43.0" prefWidth="160.0" ripplerFill="#3f1194" stylesheets="@../MainWindow/MainCss.css" text="Add Customer" textFill="#350ca4">
+               <font>
+                  <Font name="Candara" size="18.0" />
+               </font>
+               <VBox.margin>
+                  <Insets bottom="10.0" left="51.0" top="20.0" />
+               </VBox.margin>
+            </JFXButton>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>
